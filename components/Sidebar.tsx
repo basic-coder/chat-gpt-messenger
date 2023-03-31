@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   const { data: session } = useSession();
   
-  const [chats, loading, error] = useCollection(session && query(collection(db, "users", session?.user?.email!, 'chats'), orderBy('createdAt','asc')))
+  const [chats, loading, error] = useCollection(session && query(collection(db, "users", session?.user?.email!, 'chats'), orderBy('createdAt','desc')))
   
   if (loading) return <h1>loading</h1> 
   return (
