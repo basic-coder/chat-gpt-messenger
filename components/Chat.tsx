@@ -8,7 +8,7 @@ import { useCollection } from 'react-firebase-hooks/firestore'
 import Message from './Message'
 
 type Props = {
-    chatId: String
+    chatId: string
 }
 
 const Chat = ({chatId}:Props) => {
