@@ -1,0 +1,11 @@
+import React from 'react'
+
+export default function head(){
+  return (
+    <>
+        <title>Chat gpt</title>
+        <meta content="width=device-width,initial-scale=1" name='viewport' />
+        <link rel="stylesheet" href="/favicon.ico" />
+    </>
+  )
+}
